@@ -56,15 +56,47 @@
 		ADE698D6285F254A000C2426 /* Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
-				ADE698D7285F254A000C2426 /* AppDelegate.swift */,
-				ADE698D9285F254A000C2426 /* SceneDelegate.swift */,
-				ADE698DB285F254A000C2426 /* ViewController.swift */,
-				ADE698DD285F254A000C2426 /* Main.storyboard */,
-				ADE698E0285F254B000C2426 /* Assets.xcassets */,
-				ADE698E2285F254B000C2426 /* LaunchScreen.storyboard */,
-				ADE698E5285F254B000C2426 /* Info.plist */,
+				ADE698EB285F2563000C2426 /* ViewControllers */,
+				ADE698ED285F25A7000C2426 /* Storyboards */,
+				ADE698EE285F25BF000C2426 /* Resources */,
+				ADE698EC285F259A000C2426 /* App */,
 			);
 			path = Questionnaire;
+			sourceTree = "<group>";
+		};
+		ADE698EB285F2563000C2426 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADE698DB285F254A000C2426 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ADE698EC285F259A000C2426 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ADE698D7285F254A000C2426 /* AppDelegate.swift */,
+				ADE698D9285F254A000C2426 /* SceneDelegate.swift */,
+				ADE698E5285F254B000C2426 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ADE698ED285F25A7000C2426 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ADE698DD285F254A000C2426 /* Main.storyboard */,
+				ADE698E2285F254B000C2426 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ADE698EE285F25BF000C2426 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADE698E0285F254B000C2426 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Questionnaire/Info.plist;
+				INFOPLIST_FILE = Questionnaire/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -303,7 +335,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Questionnaire/Info.plist;
+				INFOPLIST_FILE = Questionnaire/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
