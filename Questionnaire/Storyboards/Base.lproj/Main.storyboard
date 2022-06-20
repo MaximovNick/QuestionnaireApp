@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Questionnaire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="Questionnaire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,13 +271,7 @@
                             <constraint firstItem="Ro1-qY-5lV" firstAttribute="centerY" secondItem="hH8-jG-XYd" secondAttribute="centerY" id="piN-e7-YUf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="GJ7-Ws-xqS">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="f5o-ZF-nlN">
-                            <connections>
-                                <segue destination="CYd-ra-7bq" kind="show" id="sjY-iI-cjh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="GJ7-Ws-xqS"/>
                     <connections>
                         <outlet property="multipleStackView" destination="ICM-vw-U1E" id="lRw-VT-baJ"/>
                         <outlet property="questionLabel" destination="KEK-rz-9GC" id="cQa-Px-Ju0"/>
@@ -341,12 +335,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="2cE-uU-4AE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="vHv-RZ-T8D">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="afI-gC-EaN">
                             <connections>
-                                <segue destination="Ske-X3-Cqj" kind="unwind" unwindAction="unwindFor:" id="BZk-xI-LjR"/>
+                                <segue destination="Ske-X3-Cqj" kind="unwind" unwindAction="unwindFor:" id="QHg-eV-JeN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalLabel" destination="7Xt-Ze-dy0" id="811-iL-5sF"/>
+                        <outlet property="answerLabel" destination="vkK-px-shX" id="v70-h3-UaM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9w-zY-ruA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ske-X3-Cqj" userLabel="Exit" sceneMemberID="exit"/>
@@ -372,9 +370,6 @@
             <point key="canvasLocation" x="515.625" y="58.098591549295776"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Irz-aY-Mk2"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
