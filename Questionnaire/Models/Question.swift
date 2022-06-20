@@ -10,14 +10,14 @@ import Foundation
 struct Question {
     let title: String
     let responseType: ResponseType
-    let answer: [Answer]
+    let answers: [Answer]
     
     static func getQuestion() -> [Question] {
         [
             Question(
                 title: "Какую пищу вы предпочитаете?",
                 responseType: .single,
-                answer: [
+                answers: [
                     Answer(title: "Стейк", animal: .dog),
                     Answer(title: "Рыба", animal: .cat),
                     Answer(title: "Морковь", animal: .rabbit),
@@ -27,7 +27,7 @@ struct Question {
             Question(
                 title: "Что вам нравиться больше?",
                 responseType: .multiple,
-                answer: [
+                answers: [
                     Answer(title: "Плавать", animal: .dog),
                     Answer(title: "Спать", animal: .cat),
                     Answer(title: "Обниматься", animal: .rabbit),
@@ -37,7 +37,7 @@ struct Question {
             Question(
                 title: "Любите ли вы поездки на машине?",
                 responseType: .ranged,
-                answer: [
+                answers: [
                     Answer(title: "Ненавижу", animal: .dog),
                     Answer(title: "Нервничаю", animal: .cat),
                     Answer(title: "Не замечаю", animal: .rabbit),
